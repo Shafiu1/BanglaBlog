@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import featuredPostData from '../data/featuredPost';
 import latestPostsData from '../data/latestPosts';
 import categoriesData from '../data/categories';
+import Profile from './Profile'
 
 const HomePage = () => {
   const [featuredPost] = useState(featuredPostData);
@@ -44,6 +45,9 @@ const HomePage = () => {
             </Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600">
               Contact
+            </Link>
+            <Link to="./Profile" className="text-gray-700 hover:text-blue-600">
+              Profile
             </Link>
           </nav>
 

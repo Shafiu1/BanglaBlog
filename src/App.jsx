@@ -3,6 +3,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import Profile from './components/Profile';
 
 // Placeholder components for additional routes
 const AboutPage = () => (
@@ -40,11 +41,13 @@ const NotFoundPage = () => (
   </div>
 );
 
+
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/Profile" element={<Profile />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/categories/:slug" element={<CategoryPage />} />
